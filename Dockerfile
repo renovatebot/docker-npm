@@ -1,16 +1,9 @@
-FROM amd64/node:8.12.0-alpine@sha256:81abb8de1e5e8b6e55bca143b3c2ec1e2d167cb27fd2cd3191a0d222f7c5e710
+FROM renovate/node
 
-LABEL maintainer="Rhys Arkins <rhys@arkins.net>"
-LABEL name="renovatebot/npm"
+ENV NPM_VERSION=6.4.1
 
-RUN apk add --quiet --no-cache git openssh-client
+RUN apt-get update && apt-get install -y git openssh-client && apt-get clean -y
 
-COPY package*.json /renovate/
+RUN npm i -g npm@$NPM_VERSION
 
-RUN cd /renovate && npm ci
-
-USER node
-
-ENV PATH /renovate/node_modules/.bin/:$PATH
-
-ENTRYPOINT ["npm"]
+USER ubuntu
