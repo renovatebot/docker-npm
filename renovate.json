@@ -1,6 +1,3 @@
 {
-  "ignoreUnstable": false,
-  "automerge": true,
-  "automergeType": "branch",
-  "pinDigests": true
+  "extends": ["github>renovatebot/docker-template"]
 }
