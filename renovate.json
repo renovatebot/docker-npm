@@ -1,6 +1,6 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "ignoreUnstable": false,
+  "automerge": true,
+  "automergeType": "branch",
   "pinDigests": true
 }

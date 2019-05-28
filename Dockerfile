@@ -1,9 +1,13 @@
-FROM renovate/node@sha256:887c567b604505a2a97985f3f7ed4b435e42b0dac09f3220a413038c6878e632
+FROM renovate/node@sha256:b675b096edd733b2045d3ef4ba0adbf3cce65f814d68b0eb42a06b4d5be7e050
 
-USER node
+USER root
 
-ENV NPM_VERSION=6.9.0
+ARG NPM_VERSION
 
 RUN npm i -g npm@$NPM_VERSION
+
+RUN chmod -R a+rw /usr/local
+
+RUN chown -R ubuntu:ubuntu /home/ubuntu
 
 USER ubuntu

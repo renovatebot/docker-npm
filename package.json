@@ -1,5 +1,6 @@
 {
   "name": "docker-npm",
+  "private": true,
   "version": "1.0.0",
   "description": "Dockerised npm command line tool",
   "repository": {
@@ -8,10 +9,6 @@
   },
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/renovatebot/docker-npm/issues"
-  },
-  "homepage": "https://github.com/renovatebot/docker-npm#readme",
   "dependencies": {
     "npm": "6.9.0"
   }
