@@ -10,6 +10,6 @@
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
   "dependencies": {
-    "npm": "6.13.3"
+    "npm": "6.13.4"
   }
 }
