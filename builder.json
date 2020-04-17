@@ -1,0 +1,8 @@
+{
+  "datasource": "npm",
+  "versioning": "npm",
+  "image": "npm",
+  "startVersion": "5.0.0",
+  "cache": "docker-build-cache",
+  "ignoredVersions": ["6.2.0-next.0"]
+}
