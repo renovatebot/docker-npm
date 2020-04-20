@@ -1,6 +1,4 @@
 {
-  "datasource": "npm",
-  "versioning": "npm",
   "image": "npm",
   "startVersion": "5.0.0",
   "cache": "docker-build-cache",
