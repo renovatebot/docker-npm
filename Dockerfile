@@ -5,7 +5,7 @@ ARG NODE_VERSION=12.16.2
 RUN install-tool node
 
 # renovate: datasource=npm depName=npm versioning=npm
-ARG NPM_VERSION=6.14.4
+ARG NPM_VERSION=6.14.5
 RUN install-tool npm
 
 LABEL org.opencontainers.image.source="https://github.com/renovatebot/docker-npm" \
