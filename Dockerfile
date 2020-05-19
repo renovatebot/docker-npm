@@ -4,7 +4,7 @@ ARG NPM_VERSION=6.14.5
 FROM renovate/buildpack:2-node@sha256:b0aae95d55264a80ab01c48ab992bd135e6aa88f01d130e8bf8fb40ab3d3129a
 
 # renovate: datasource=docker depName=node versioning=docker
-ARG NODE_VERSION=12.16.2
+ARG NODE_VERSION=12.16.3
 RUN install-tool node
 
 ARG NPM_VERSION
