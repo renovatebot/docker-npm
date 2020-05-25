@@ -1,7 +1,7 @@
 # renovate: datasource=npm depName=npm versioning=npm
 ARG NPM_VERSION=6.14.5
 
-FROM renovate/buildpack:2-node@sha256:e006ec31c92890df0f31e39652539aa7c2cc293abc4cde7b8c79f7d044389501
+FROM renovate/buildpack:2-node@sha256:820d8068b729d39ea0e6532c664df95427c938078b3c6fd01419967cb7de6a31
 
 # renovate: datasource=docker depName=node versioning=docker
 ARG NODE_VERSION=12.16.3
